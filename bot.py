@@ -1,6 +1,7 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
-from config import TOKEN  # Імпортуємо токен з окремого файлу
+TOKEN = "7912193392:AAFR_b7CjF-oVySYFKq_RNUYbH1mWyphPxk"  # <-- встав сюди свій токен
+  # Імпортуємо токен з окремого файлу
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
