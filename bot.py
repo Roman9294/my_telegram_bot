@@ -1,8 +1,6 @@
-import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
-
-TOKEN = os.getenv("TOKEN")  # Бере токен зі змінних середовища
+from config import TOKEN  # Імпортуємо токен з окремого файлу
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
